@@ -197,15 +197,18 @@ i.menu__list-icon{
 /****** PUBLICIDAD *********/
 .publicidad {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .publicidad__img-box {
-    height: 150px;
+    /* height: auto; */
     background: #DEDEDE;
+    /* min-height: 150px; */
 }
 .publicidad__img {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
-    object-fit: cover;
+    /* object-fit: contain; */
 }
 
 
