@@ -1,7 +1,7 @@
 const express = require('express')
 var path = require('path');
 const app = express()
-const port = process.env.PORT || 30000
+const port = process.env.PORT || 3000
 
 
 var filePage = {
@@ -18,5 +18,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://0.0.0.0:${port}`)
+    console.log(`Example app listening at http://localhost:${port}`)
 })
