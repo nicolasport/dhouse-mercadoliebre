@@ -46,8 +46,7 @@ main {
     align-items: center;
 }
 
-/****** menu content *********/
-/*Menu Hamburguesa efecto*/
+/****** MENU *********/
 
 input[type=checkbox] {display: none;}
 
@@ -70,7 +69,6 @@ input[type=checkbox]:checked~#checkMenu {
 }
 
 
-
 .menu {
     background: var(--yellow);
     width: 100%;
@@ -81,6 +79,7 @@ input[type=checkbox]:checked~#checkMenu {
     justify-content: space-between;
     align-items: center;
 }
+
 .menu__oneline-row {width: 100%;}
 .menu__row1 {
     width: 100%;
@@ -168,7 +167,7 @@ nav.menu__list {
     /*TODO - Solo para la versión mobile, ocultar el site y el login navbar - (FIRST MOBILE)*/
     visibility: hidden;
 }
-/*.sub-row_left{}*/
+
 .menu__list-item {
     display: flex;
     padding: 10px;
@@ -190,8 +189,6 @@ p.menu__list-item:hover {
 i.menu__list-icon{
     color: inherit;
 }
-/*.sub-row_right{}
-    .menu__list-item*/
 
 
 /****** PUBLICIDAD *********/
@@ -201,14 +198,10 @@ i.menu__list-icon{
     justify-content: center;
 }
 .publicidad__img-box {
-    /* height: auto; */
     background: #DEDEDE;
-    /* min-height: 150px; */
 }
 .publicidad__img {
-    /* height: 100%; */
     width: 100%;
-    /* object-fit: contain; */
 }
 
 
@@ -288,7 +281,6 @@ h1.article__title {
     width: 70%;
 }
 
-/*.article__description-box*/
 .article__description-box{
     /*TODO - Solo en el caso mobile la descripción del artículo no se visualizará (MOBILE FIRST)*/
     display: none;
@@ -305,7 +297,6 @@ footer.foo_box {
     margin-top: 12px;
 }
 article.foo__article {
-    /*width: 360px;*/
     margin: 19px;
 }
 .foo__articles-box {
@@ -337,7 +328,7 @@ p.foo__desc {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 }
-/*Navegación en tablets (ancho mínimo 361 px)*/
+/*Navegación en TABLET */
 @media (min-width: 481px ) and  (max-width: 1279px ) {
     .menu__row1{
         width: 66.6%;
@@ -366,7 +357,7 @@ p.foo__desc {
         flex-direction: column;
     }
 }
-/*Navegación en desktop (ancho mínimo 769 px)*/
+/*Navegación en DESKTOP*/
 @media (min-width: 1280px ){
     .container{
         /*TODO - Navegación en desktop (ancho mínimo 769 px)*/
@@ -397,6 +388,7 @@ p.foo__desc {
     }
 }
 
+/*Burger Menu SHOW & HIDE*/
 @media (min-width: 481px) {
     .article__description-txt{
         display: initial;
@@ -453,6 +445,8 @@ p.foo__desc {
 
 
 }
+
+/*Solo para centrar el menu en ese tamaño*/
 @media (min-width: 989px) {
     #checkMenu {
         justify-content: space-between;
