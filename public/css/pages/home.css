@@ -1,26 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*TODO: Microdefaio 1 iconos*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
-:root{
-    /*TODO: Microdefaio 1 paleta de colores*/
-    --article-line-color:#ebebeb;
-    --yellow: #EAC926;
-    --blue: #03264C;
-    --lblue: #1259c3;
-    --dgrey: #666;
-    --lgrey: #ebebeb;
-    --green: #39b54a;
-    /*TODO: Microdefaio 1 tamaños tipograficos*/
-    --body-text: 12px;
-    --title: 24px; /*Basado en tu última visita/Ofertas*/
-    --price: 18px;
-    --off: 16px;
-    --description: 16px;
-    /*TODO: Microdefaio 1 tipografias*/
-    --default-font: 'Roboto', sans-serif;
+@import url('/css/root.css');
+/****** MENU *********/
+@import url('/css/layouts/menu.css');
+/****** FOOTER *********/
+@import url('/css/layouts/footer.css');
 
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -46,149 +32,6 @@ main {
     align-items: center;
 }
 
-/****** MENU *********/
-
-input[type=checkbox] {display: none;}
-
-input[type=checkbox]:checked~.remove-check {display: none;}
-
-input[type=checkbox]:checked~#checkMenu {
-    position: unset;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0px);
-    transition: all 0.5s;
-}
-
-#checkMenu {
-    transform: translateX(-100px);
-    position: absolute;
-    opacity: 0;
-    display: flex;
-    transition: all 0s;
-}
-
-
-.menu {
-    background: var(--yellow);
-    width: 100%;
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu__oneline-row {width: 100%;}
-.menu__row1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.menu__logo {
-    height: 37px;
-    /*TODO - Logo: tiene que medir el 50% de su contenedor*/
-    width: 50%;
-}
-.menu__logo-img {
-    height: 100%;
-    object-fit: fill;
-    width: 100%;
-}
-
-.menu__search-bar {
-    display: flex;
-    align-items: center;
-    /*TODO - Barra de búsqueda: tiene que medir el 50% de su contenedor*/
-    width: 50%;
-    justify-content: center;
-}
-form.menu__from-search {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-input#menu__search-bar {
-    width: 84%;
-}
-button.menu__search-btn {
-    position: relative;
-    right: 30px;
-    width: 30px;
-}
-
-.menu__row2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    font-size: 17px;
-    align-items: baseline;
-}
-.menu_hand-icon {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 20px 0px;
-    font-size: 17px;
-    align-items: baseline;
-}
-i.fa-solid.fa-hand-holding-dollar {
-    font-size: 25px;
-    margin-right: 13px;
-    height: 100%;
-    margin-top: -14px;
-}
-
-.menu__burger-box {
-    width: 100%;
-    overflow: hidden;
-}
-.menu__burger-icon {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-i.menu__burger-icon {
-    background: var(--lblue);
-    color: white;
-    padding: 10px 7px;
-    font-size: 27px;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
-nav.menu__list {
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    /*TODO - Solo para la versión mobile, ocultar el site y el login navbar - (FIRST MOBILE)*/
-    visibility: hidden;
-}
-
-.menu__list-item {
-    display: flex;
-    padding: 10px;
-    background: var(--yellow);
-    width: 115px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-a.menu__list-item:hover {
-    background-color: var(--blue);
-    color: white;
-    border-radius: 10px;
-}
-p.menu__list-item:hover {
-    background-color: var(--blue);
-    border-radius: 10px;
-}
-i.menu__list-icon{
-    color: inherit;
-}
 
 
 /****** PUBLICIDAD *********/
@@ -288,39 +131,8 @@ h1.article__title {
 }
 
 
-/****** FOOTER *********/
-footer.foo_box {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    background: white;
-    margin-top: 12px;
-}
-article.foo__article {
-    margin: 19px;
-}
-.foo__articles-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-i.foo__icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: var(--lblue);
-}
-p.foo__title {
-    font-size: var(--price);
-}
-p.foo__desc {
-    font-size: var(--description);
-}
 
-.copyr-box {
-    width: 100%;
-}
+
 
 /*TODO - Agregar box-shadow. Para los dispositivos tablet o de resoluciones superiores*/
 @media (min-width: 481px ) {

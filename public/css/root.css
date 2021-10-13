@@ -1,0 +1,20 @@
+:root{
+    /*TODO: Microdefaio 1 paleta de colores*/
+    --article-line-color:#ebebeb;
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --lblue: #1259c3;
+    --dgrey: #666;
+    --lgrey: #ebebeb;
+    --green: #39b54a;
+    /*TODO: Microdefaio 1 tamaños tipograficos*/
+    --body-text: 12px;
+    --title: 24px; /*Basado en tu última visita/Ofertas*/
+    --price: 18px;
+    --off: 16px;
+    --description: 16px;
+    /*TODO: Microdefaio 1 tipografias*/
+    --default-font: 'Roboto', sans-serif;
+
+
+}

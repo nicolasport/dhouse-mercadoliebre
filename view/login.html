@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/pages/login.css">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+    <title>MercadoLiebre</title>
+</head>
+<body>
+    <div class="container">
+        <section class="menu" >
+            <div class="menu__oneline-row">
+                <div class="menu__row1">
+                    <div class="menu__logo">
+                        <img class="menu__logo-img" src="/img/logo-mercado-liebre.svg" alt="Kiwi standing on oval">
+                    </div>
+                    <div class="menu__search-bar">
+                        <form class="menu__from-search">
+                            <label for="menu__search-bar"></label>
+                            <input type="text" id="menu__search-bar">
+                            <button class="menu__search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="menu__row2">
+                    <div class="menu_hand-icon">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Compra en cuotas y sin tarjeta de credito</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu__burger-box">
+                <div class="menu__burger-icon">
+                    <label for="reveal-menu" class="menu__burger-label">
+                        <i  class="menu__burger-icon fas fa-thin fa-bars"></i>
+                    </label>
+                </div>
+                <input type="checkbox" id="reveal-menu" role="button">
+
+                <nav class="menu__list" id="checkMenu">
+
+                    <div class="sub-row_left">
+                        <a class="menu__list-item" href="">Ofertas</a>
+                        <a class="menu__list-item" href="">Tiendas Oficiales</a>
+                        <a class="menu__list-item" href="">Vender</a>
+                        <a class="menu__list-item" href="">Ayuda</a>
+                    </div>
+
+                    <div class="sub-row_right">
+                        <a class="menu__list-item" href="/register">
+                            Creá tu cuenta
+                            <i class="menu__list-icon far fa-id-card"></i>
+                        </a>
+                        <a class="menu__list-item" href="/login">
+                            Ingresá
+                            <i class="menu__list-icon fas fa-sign-in-alt"></i>
+                        </a>
+                        <a class="menu__list-item" href="">
+                            Mis compras
+                            <i class="menu__list-icon fas fa-shopping-basket"></i>
+                        </a>
+                    </div>
+
+                </nav>
+            </div>
+        </section>
+
+        <main>
+            <div class="form form-box">
+
+                <form action="/login" method="post">
+                    <input  type="text"
+                            id="username"
+                            name="username"
+                            required
+                            minlength="8"
+                            pattern="^[a-z\d\.]{5,}$"
+                            title="Username solo debe contener minusculas y debe tener una longitud de 8 caracteres minimo. ej: johndaniel"
+                            placeholder="Nombre de usuario"><br><br>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           required
+                           minlength="8"
+                           pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                           title="La contraseña debe tener como minimo 8 caracteres y contener al menus un caracter UpperCase, LowerCase, Number/SpecialChar"
+                           placeholder="Elegi tu contraseña"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+        </main>
+
+        <footer class="foo_box">
+            <div class="foo__articles-box">
+                <article class="foo__article">
+                    <i class="foo__icon fas fa-credit-card"></i>
+                    <p class="foo__title">Pagá con tarjeta o en efectivo</p>
+                    <p class="foo__desc">
+                        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </article>
+                <article class="foo__article">
+                    <i class="foo__icon fas fa-gift"></i>
+                    <p class="foo__title">Envío gratis desde $ 2.500</p>
+                    <p class="foo__desc">
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </article>
+                <article class="foo__article">
+                    <i class="foo__icon fas fa-user-shield"></i>
+                    <p class="foo__title">Seguridad, de principio a fin</p>
+                    <p class="foo__desc">
+                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.
+                    </p>
+                </article>
+            </div>
+            <div class="copyr-box">
+                <p class="copy-right-txt">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

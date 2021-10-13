@@ -1,0 +1,33 @@
+footer.foo_box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: white;
+    margin-top: 12px;
+    justify-content: center;
+}
+article.foo__article {
+    margin: 19px;
+}
+.foo__articles-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+i.foo__icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--lblue);
+}
+p.foo__title {
+    font-size: var(--price);
+}
+p.foo__desc {
+    font-size: var(--description);
+}
+
+.copyr-box {
+    width: 100%;
+}
