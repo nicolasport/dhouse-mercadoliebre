@@ -88,3 +88,10 @@ p.form__title {
 .form input:invalid:focus  {
     color:red;
 }
+.intersted-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 10px;
+    margin-bottom: 50px;
+}

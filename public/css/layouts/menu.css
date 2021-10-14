@@ -143,9 +143,7 @@ i.menu__list-icon{
 
 /*Burger Menu SHOW & HIDE*/
 @media (min-width: 481px) {
-    .article__description-txt{
-        display: initial;
-    }
+
     .menu__burger-icon {
         /*TODO - Ocultar la imagen del menú hamburguesa para las versiones desktop y tablet*/
         display: none;
@@ -160,13 +158,6 @@ i.menu__list-icon{
         transition: all 0s;
         align-items: center;
         justify-content: center;
-    }
-
-    .menu__menu_row1{
-        width: 66.66%;
-    }
-    .menu__menu_row2{
-        width: 33.33%;
     }
 
     .menu_hand-icon{
@@ -194,16 +185,6 @@ i.menu__list-icon{
         flex-direction: row;
         display: flex;
     }
-
-
-    .intersted-box {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 1rem;
-        gap: 10px;
-        margin-bottom: 50px;
-    }
-
 
 }
 
