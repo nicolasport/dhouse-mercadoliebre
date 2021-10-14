@@ -140,3 +140,77 @@ p.menu__list-item:hover {
 i.menu__list-icon{
     color: inherit;
 }
+
+/*Burger Menu SHOW & HIDE*/
+@media (min-width: 481px) {
+    .article__description-txt{
+        display: initial;
+    }
+    .menu__burger-icon {
+        /*TODO - Ocultar la imagen del menú hamburguesa para las versiones desktop y tablet*/
+        display: none;
+    }
+    #checkMenu  {
+        display: flex;
+        /*TODO - Para las versiones desktop y tablet mostrar el site y login navbar*/
+        visibility: visible;
+        transform: scale(1);
+        position: unset;
+        opacity: 1;
+        transition: all 0s;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__menu_row1{
+        width: 66.66%;
+    }
+    .menu__menu_row2{
+        width: 33.33%;
+    }
+
+    .menu_hand-icon{
+        margin: 0;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.menu__list {
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .menu__oneline-row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    .sub-row_left {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .sub-row_right {
+        flex-direction: row;
+        display: flex;
+    }
+
+
+    .intersted-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+/*Solo para centrar el menu en ese tamaño*/
+@media (min-width: 989px) {
+    #checkMenu {
+        justify-content: space-between;
+    }
+}
+

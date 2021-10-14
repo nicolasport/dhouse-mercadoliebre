@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*TODO: Microdefaio 1 iconos*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
-@import url('/css/root.css');
-/****** MENU *********/
 @import url('/css/layouts/menu.css');
-/****** FOOTER *********/
 @import url('/css/layouts/footer.css');
+@import url('/css/root.css');
 
 *{
     margin: 0;
@@ -130,137 +128,9 @@ h1.article__title {
     font-size: var(--description);
 }
 
-
-
-
-
 /*TODO - Agregar box-shadow. Para los dispositivos tablet o de resoluciones superiores*/
 @media (min-width: 481px ) {
     .article__card:hover{
         box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
-}
-/*Navegación en TABLET */
-@media (min-width: 481px ) and  (max-width: 1279px ) {
-    .menu__row1{
-        width: 66.6%;
-    }
-    .article__description-box{
-        display: initial;
-    }
-    .menu__row2{
-        width: 33.3%;
-    }
-    .container{
-        /*TODO Navegación en tablets (ancho mínimo 361 px)*/
-        min-width: 361px;
-    }
-
-    .article{
-        /* TODO - ¿Qué debemos modificar para que, aplicando Flexbox,
-        solo se vea un artículo si estamos en mobile, dos artículos para tablet?*/
-        max-width: 898px;
-    }
-
-    .articles-list-box {
-        justify-content: space-around;
-    }
-    .foo__articles-box{
-        flex-direction: column;
-    }
-}
-/*Navegación en DESKTOP*/
-@media (min-width: 1280px ){
-    .container{
-        /*TODO - Navegación en desktop (ancho mínimo 769 px)*/
-        min-width: 769px;
-    }
-    .article__description-box{
-        display: initial;
-    }
-    .menu__row1{
-        width: 66.6%;
-    }
-    .menu__row2{
-        width: 33.3%;
-    }
-    .articles-list-box {
-        justify-content: space-around;
-    }
-
-    .article{
-        /*TODO - ¿Qué debemos modificar para que, aplicando Flexbox,
-        solo se vea un artículo si estamos en mobile, cuatro artículos
-        para la versión desktop?*/
-        min-width: 1241px;
-    }
-
-    .foo__articles-box{
-        flex-direction: row;
-    }
-}
-
-/*Burger Menu SHOW & HIDE*/
-@media (min-width: 481px) {
-    .article__description-txt{
-        display: initial;
-    }
-    .menu__burger-icon {
-        /*TODO - Ocultar la imagen del menú hamburguesa para las versiones desktop y tablet*/
-        display: none;
-    }
-    #checkMenu  {
-        display: flex;
-        /*TODO - Para las versiones desktop y tablet mostrar el site y login navbar*/
-        visibility: visible;
-        transform: scale(1);
-        position: unset;
-        opacity: 1;
-        transition: all 0s;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menu__menu_row1{
-        width: 66.66%;
-    }
-    .menu__menu_row2{
-        width: 33.33%;
-    }
-
-    .menu_hand-icon{
-        margin: 0;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    nav.menu__list {
-        flex-direction:row;
-        justify-content: space-between;
-    }
-    .menu__oneline-row {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        margin-bottom: 27px;
-    }
-    .sub-row_left {
-        flex-direction: row;
-        display: flex;
-    }
-
-    .sub-row_right {
-        flex-direction: row;
-        display: flex;
-    }
-
-
-
-}
-
-/*Solo para centrar el menu en ese tamaño*/
-@media (min-width: 989px) {
-    #checkMenu {
-        justify-content: space-between;
     }
 }

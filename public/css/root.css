@@ -18,3 +18,67 @@
 
 
 }
+
+/*TABLET */
+@media (min-width: 481px ) and  (max-width: 1279px ) {
+    .container{
+        min-width: 361px;
+    }
+    /*MENU*/
+    .menu__row1{
+        width: 66.6%;
+    }
+    .menu__row2{
+        width: 33.3%;
+    }
+    /*FOOTER*/
+    .foo__articles-box{
+        flex-direction: column;
+    }
+    .article{
+        /* TODO - ¿Qué debemos modificar para que, aplicando Flexbox,
+        solo se vea un artículo si estamos en mobile, dos artículos para tablet?*/
+        max-width: 898px;
+    }
+    .articles-list-box {
+        justify-content: space-around;
+    }
+    .article__description-box{
+        display: initial;
+    }
+}
+
+
+/*DESKTOP*/
+@media (min-width: 1280px ){
+    .foo__articles-box{
+        flex-direction: row;
+    }
+    .container{
+        /*TODO - Navegación en desktop (ancho mínimo 769 px)*/
+        min-width: 769px;
+    }
+
+    .menu__row1{
+        width: 66.6%;
+    }
+    .menu__row2{
+        width: 33.3%;
+    }
+
+    .article__description-box{
+        display: initial;
+    }
+
+    .articles-list-box {
+        justify-content: space-around;
+    }
+
+    .article{
+        /*TODO - ¿Qué debemos modificar para que, aplicando Flexbox,
+        solo se vea un artículo si estamos en mobile, cuatro artículos
+        para la versión desktop?*/
+        min-width: 1241px;
+    }
+
+}
