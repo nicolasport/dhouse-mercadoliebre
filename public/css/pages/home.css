@@ -134,3 +134,9 @@ h1.article__title {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 }
+
+@media (min-width: 1280px){
+    .article__description-box {
+        display: initial;
+    }
+}
