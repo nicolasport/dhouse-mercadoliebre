@@ -65,18 +65,26 @@ p.form__title {
     gap: 30px;
     font-style: italic;
 }
-.form input[type="submit"] {
+
+._button{
     height: 39px;
     width: 100%;
     background: var(--blue);
     color: white;
     border-radius: 8px;
 }
-.form input[type="submit"]:hover {
+._button:hover{
     background: #0000fb;
     border: 4px solid #3838ff;
     box-shadow: 1px 1px 7px rgb(0 75 213);
 }
+
+.form__btn-box {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
 .form input:invalid:focus  {
     color:red;
 }
